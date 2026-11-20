@@ -1,4 +1,4 @@
-package com.mycompany.welcomecard.horse.stable.system;
+package com.mycompany.welcomecard.horsestablesystem;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

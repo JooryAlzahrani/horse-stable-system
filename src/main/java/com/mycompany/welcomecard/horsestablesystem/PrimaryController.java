@@ -1,4 +1,4 @@
-package com.mycompany.welcomecard.horse.stable.system;
+package com.mycompany.welcomecard.horsestablesystem;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
