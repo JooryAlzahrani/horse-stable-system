@@ -1,0 +1,50 @@
+/* Royal Stable theme: saddle brown, hay gold, cream, pasture green */
+.root-pane { -fx-background-color: #F5EBDD; -fx-font-family: "Segoe UI", "Arial"; -fx-font-size: 14px; }
+.login-bg  { -fx-background-color: linear-gradient(to bottom right, #5D4037, #8D6E63); }
+
+.sidebar { -fx-background-color: #4E342E; }
+.brand { -fx-text-fill: #E9C46A; -fx-font-size: 20px; -fx-font-weight: bold; -fx-padding: 0 0 16 4; }
+.nav-button { -fx-background-color: transparent; -fx-text-fill: #F5EBDD; -fx-alignment: CENTER_LEFT;
+              -fx-padding: 10 14; -fx-background-radius: 8; -fx-cursor: hand; }
+.nav-button:hover { -fx-background-color: #6D4C41; }
+.nav-active { -fx-background-color: #C8963E; -fx-text-fill: #3E2723; -fx-font-weight: bold; }
+.nav-active:hover { -fx-background-color: #C8963E; }
+
+.header { -fx-background-color: #EADBC4; -fx-border-color: #C8963E; -fx-border-width: 0 0 2 0; }
+.page-title { -fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #4E342E; }
+.section-title { -fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #5D4037; }
+.muted { -fx-text-fill: #8D6E63; }
+.logo { -fx-font-size: 54px; }
+.error-label { -fx-text-fill: #B3261E; -fx-font-size: 12px; }
+
+.card, .stat-card { -fx-background-color: #FFFBF5; -fx-background-radius: 12; -fx-border-color: #E0CDB0;
+                    -fx-border-radius: 12; -fx-effect: dropshadow(gaussian, rgba(62,39,35,0.15), 8, 0, 0, 2); }
+.stat-card { -fx-padding: 18; }
+.stat-icon { -fx-font-size: 28px; }
+.stat-number { -fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #3E5C3A; }
+
+.text-field, .password-field, .text-area, .combo-box { -fx-background-color: white; -fx-border-color: #CDB89A;
+        -fx-border-radius: 6; -fx-background-radius: 6; }
+.text-field:focused, .password-field:focused, .text-area:focused, .combo-box:focused { -fx-border-color: #C8963E; -fx-border-width: 2; }
+.search-field { -fx-padding: 9; }
+.text-area .content { -fx-background-color: white; }
+.report-area { -fx-font-family: "Consolas", monospace; }
+
+.primary-button   { -fx-background-color: #3E5C3A; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8; -fx-padding: 9 20; -fx-cursor: hand; }
+.primary-button:hover { -fx-background-color: #2F4A2C; }
+.secondary-button { -fx-background-color: #C8963E; -fx-text-fill: #3E2723; -fx-font-weight: bold; -fx-background-radius: 8; -fx-padding: 9 20; -fx-cursor: hand; }
+.secondary-button:hover { -fx-background-color: #B5842F; }
+.danger-button    { -fx-background-color: #A33B32; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8; -fx-padding: 9 20; -fx-cursor: hand; }
+.danger-button:hover { -fx-background-color: #8A2F27; }
+.button:disabled  { -fx-opacity: 0.45; }
+
+.table-view { -fx-background-color: #FFFBF5; -fx-border-color: #E0CDB0; -fx-border-radius: 8; -fx-background-radius: 8; }
+.table-view .column-header-background { -fx-background-color: #5D4037; }
+.table-view .column-header, .table-view .filler { -fx-background-color: #5D4037; -fx-size: 36; }
+.table-view .column-header .label { -fx-text-fill: #F5EBDD; -fx-font-weight: bold; }
+.table-row-cell:odd { -fx-background-color: #F8F0E3; }
+.table-row-cell:selected { -fx-background-color: #E9C46A; }
+.table-row-cell:selected .text { -fx-fill: #3E2723; }
+.list-cell:odd { -fx-background-color: #F8F0E3; }
+.list-cell:selected { -fx-background-color: #E9C46A; -fx-text-fill: #3E2723; }
+.radio-button:selected .dot, .check-box:selected .mark { -fx-background-color: #3E5C3A; }
