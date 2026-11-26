@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="620.0" prefWidth="1000.0" styleClass="root-pane" stylesheets="@stable.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.welcomecard.horsestablesystem.controller.ReportController">
+   <left>
+      <VBox spacing="8.0" styleClass="sidebar" prefWidth="200.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="8.0">
+               <children>
+                  <ImageView fitWidth="38.0" fitHeight="38.0" preserveRatio="true">
+                     <image><Image url="@logo_light.png" /></image>
+                  </ImageView>
+                  <Label text="Royal Stable" styleClass="brand" />
+               </children>
+            </HBox>
+            <Button text="🏠  Dashboard" onAction="#goDashboard" styleClass="nav-button" maxWidth="Infinity" />
+            <Button text="🐴  Horses" onAction="#goHorses" styleClass="nav-button" maxWidth="Infinity" />
+            <Button text="👤  Owners" onAction="#goOwners" styleClass="nav-button" maxWidth="Infinity" />
+            <Button text="🏚  Stalls" onAction="#goStalls" styleClass="nav-button" maxWidth="Infinity" />
+            <Button text="📊  Reports" onAction="#goReports" styleClass="nav-button nav-active" maxWidth="Infinity" />
+            <Region VBox.vgrow="ALWAYS" />
+            <Button text="⎋  Logout" onAction="#logout" styleClass="nav-button" maxWidth="Infinity" />
+         </children>
+         <padding><Insets top="20.0" right="12.0" bottom="20.0" left="12.0" /></padding>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER_LEFT" styleClass="header">
+         <children>
+            <Label text="Reports" styleClass="page-title" />
+         </children>
+         <padding><Insets top="16.0" right="24.0" bottom="16.0" left="24.0" /></padding>
+      </HBox>
+   </top>
+   <center>
+      <VBox spacing="16.0">
+         <children>
+            <HBox spacing="12.0" alignment="CENTER_LEFT">
+               <children>
+                  <Label text="Report:" styleClass="section-title" />
+                  <ComboBox fx:id="reportCombo" promptText="Choose a report" prefWidth="280.0" />
+                  <Button text="Generate" onAction="#handleGenerate" styleClass="primary-button" />
+                  <Button text="Export to file" onAction="#handleExport" styleClass="secondary-button" />
+               </children>
+            </HBox>
+            <TextArea fx:id="reportArea" editable="false" wrapText="true" promptText="Report output appears here (e.g. horses per owner, horses per breed, stall occupancy)..." VBox.vgrow="ALWAYS" styleClass="report-area" />
+         </children>
+         <padding><Insets top="10.0" right="24.0" bottom="24.0" left="24.0" /></padding>
+      </VBox>
+   </center>
+</BorderPane>
